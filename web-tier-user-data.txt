@@ -10,7 +10,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 
 # Define variables
-APP_TIER_ALB_URL="http://internal-app-tier-internal-alb-179583854.ap-south-1.elb.amazonaws.com"  # Replace with your alb endpoint
+APP_TIER_ALB_URL="http://internal-app-tier-internal-alb-119431850.ap-south-1.elb.amazonaws.com"  # Replace with your alb endpoint
 NGINX_CONF="/etc/nginx/nginx.conf"
 SERVER_NAME="decsika.cohub.co.in"  # Replace with your actual domain name
 
@@ -137,4 +137,5 @@ chmod +x ./install
 sudo ./install auto
 
 sudo systemctl start codedeploy-agent
+
 
